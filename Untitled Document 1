@@ -65,3 +65,65 @@ True
 >>> a==b
 True
 
+
+IF ELSE STATEMENTS
+dl318@soetcse:~/shrishyla$ python3 labs3.py
+a is greater than b
+
+
+dl318@soetcse:~/shrishyla$ python3 labs31.py
+enter value of a20
+enter value of b30
+b is greater than a
+
+
+dl318@soetcse:~/shrishyla$ python3 labs32.py
+enter a number10
+a is an even number
+dl318@soetcse:~/shrishyla$ python3 labs32.py
+enter a number5
+a is an odd number
+
+
+dl318@soetcse:~/shrishyla$ python3 labs32.py
+enter a number20
+20  is an even number
+dl318@soetcse:~/shrishyla$ python3 labs32.py
+enter a number63
+63  is an odd number
+
+
+
+dl318@soetcse:~/shrishyla$ python3 labs33.py
+enter the value20
+20 is a positive number
+dl318@soetcse:~/shrishyla$ python3 labs33.py
+enter the value-30
+-30 is a negative number
+
+
+dl318@soetcse:~/shrishyla$ python3 labs34.py
+enter your marks95
+your grade is A+
+dl318@soetcse:~/shrishyla$ python3 labs34.py
+enter your marks85
+your grade is A
+dl318@soetcse:~/shrishyla$ python3 labs34.py
+enter your marks75
+your grade is B+
+dl318@soetcse:~/shrishyla$ python3 labs34.py
+enter your marks65
+your grade is B
+dl318@soetcse:~/shrishyla$ python3 labs34.py
+enter your marks55
+your grade is C
+dl318@soetcse:~/shrishyla$ 35
+35: command not found
+dl318@soetcse:~/shrishyla$ python3 labs34.py
+enter your marks35
+your grade is fail
+
+
+
+
+
