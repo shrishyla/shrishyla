@@ -1,0 +1,48 @@
+
+FUNCTIONS
+
+dl318@soetcse:~$ cd shrishyla
+dl318@soetcse:~/shrishyla$ python3 labs61.py
+30
+dl318@soetcse:~/shrishyla$ python3 labs62.py
+40
+dl318@soetcse:~/shrishyla$ python3 labs62.py
+50
+dl318@soetcse:~/shrishyla$ python3 labs63.py
+25
+dl318@soetcse:~/shrishyla$ python3 labs64.py
+50
+dl318@soetcse:~/shrishyla$ python3 labs65.py
+600
+dl318@soetcse:~/shrishyla$ python3 labs66.py
+600
+dl318@soetcse:~/shrishyla$ python3 labs67.py
+5.0
+dl318@soetcse:~/shrishyla$ python3 labs68.py
+5.0
+dl318@soetcse:~/shrishyla$ python3 labs69.py
+0
+dl318@soetcse:~/shrishyla$ python3 labs610.py
+0
+dl318@soetcse:~/shrishyla$ python3 labs611.py
+enter the value of a10
+enter the value of b30
+addition= 40
+subtraction= -20
+
+
+
+orange
+['mango', 'strawberry', 'apple', 'orange']
+mango
+strawberry
+apple
+orange
+
+
+mango
+{1: 'mango', 2: 'apple', 3: 'orange'}
+
+
+
+
