@@ -1,3 +1,4 @@
+code:
 import random
 r={1:'r',2:'p',3:'s'}
 a=0
@@ -35,3 +36,28 @@ while a<3 and b<3:
 	elif(a==3):
 		print("player wins")	
 	
+
+input/output:
+
+enter r for rock, p for paper, s for scissors
+enter your optionr
+r
+its a draw
+enter r for rock, p for paper, s for scissors
+enter your optionr
+r
+its a draw
+enter r for rock, p for paper, s for scissors
+enter your option2
+r
+computer wins
+enter r for rock, p for paper, s for scissors
+enter your option1
+r
+computer wins
+enter r for rock, p for paper, s for scissors
+enter your option3
+s
+computer wins
+computer wins
+
