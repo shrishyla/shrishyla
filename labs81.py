@@ -38,8 +38,17 @@ while True:
 				else:
 					print("player 2 wins")
 					exit()	
+		
 		#checking for draw condition			
-		for i in range(1,10):
-
+		if(a[2]==a[4] and a[2]==a[6]):
+			if a=='X':
+				print("player 1 wins")
+			else:
+				print("player 2 wins")
+		if(a[0]==a[4] and a[0]==a[8]):
+			if a=='O':
+				print("player 2 wins")
+			else:
+				print("player 1 wins")
 	else:
 		continue		
