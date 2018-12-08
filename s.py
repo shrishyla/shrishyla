@@ -99,11 +99,16 @@ class Calendar:
         ok = tk.Button(self.parent, width=5, text='OK', command=self.kill_and_save)
         self.wid.append(ok)
         ok.grid(row=9, column=2, columnspan=3, pady=10)
-         
+
+
+
+
+
+
+class place:         
     def kill_and_save(self):
         self.parent.destroy()
- 
- 
+
 if __name__ == '__main__':
  
     class Control:
@@ -121,8 +126,36 @@ if __name__ == '__main__':
              
         def print_selected_date(self):
             print(self.data)
-             
+
  
     root = tk.Tk()
     app = Control(root)
+
+
     root.mainloop()
+
+place()
+
+from tkinter import *
+
+def show_entry_fields():
+   print("date: %s\nplace: %s" % (e1.get(), e2.get()))
+   e1.delete(0,END)
+   e2.delete(0,END)
+
+master = Tk()
+Label(master, text="date").grid(row=0)
+Label(master, text="place").grid(row=1)
+
+e1 = Entry(master)
+e2 = Entry(master)
+
+e1.grid(row=0, column=1)
+e2.grid(row=1, column=1)
+
+Button(master, text='Quit', command=master.quit).grid(row=3, column=0, sticky=W, pady=4)
+Button(master, text='Show', command=show_entry_fields).grid(row=3, column=1, sticky=W, pady=4)
+
+mainloop( )    
+
+
