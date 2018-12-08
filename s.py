@@ -5,6 +5,12 @@ if sys.version[0] == '2':
     import Tkinter as tk
 else:
     import tkinter as tk
+
+
+from tkinter import *
+from weather import Weather,Unit
+
+
  
 class Calendar:
     def __init__(self, parent, values):
@@ -63,7 +69,17 @@ class Calendar:
          
         self.clear()
         self.setup(self.year, self.month)
-         
+        win=tk.Tk()
+
+        weather = Weather(unit=Unit.CELSIUS)
+        z=input("enter location")
+        location=weather.lookup_by_location(z)
+        condition=location.condition
+        label=Label(text=condition.text)
+       
+
+        win.mainloop()
+        
     def setup(self, y, m):
         left = tk.Button(self.parent, text='<', command=self.go_prev)
         self.wid.append(left)
@@ -101,42 +117,48 @@ class Calendar:
         ok.grid(row=9, column=2, columnspan=3, pady=10)
 
 
+        
+        
+    def kill_and_save(self):
+        self.parent.destroy()
+
+
 
 
 
 
 class place:         
-    def kill_and_save(self):
-        self.parent.destroy()
+   
 
-if __name__ == '__main__':
- 
-    class Control:
-        def __init__(self, parent):
-            self.parent = parent
-            self.choose_btn = tk.Button(self.parent, text='Choose',command=self.popup)
-            self.show_btn = tk.Button(self.parent, text='Show Selected',command=self.print_selected_date)
-            self.choose_btn.grid()
-            self.show_btn.grid()
-            self.data = {}
-             
-        def popup(self):
-            child = tk.Toplevel()
-            cal = Calendar(child, self.data)
-             
-        def print_selected_date(self):
-            print(self.data)
+    if __name__ == '__main__':
+     
+        class Control:
+            def __init__(self, parent):
+                self.parent = parent
+                self.choose_btn = tk.Button(self.parent, text='Choose',command=self.popup)
+                self.show_btn = tk.Button(self.parent, text='Show Selected',command=self.print_selected_date)
+                self.choose_btn.grid()
+                self.show_btn.grid()
+                self.data = {}
+                 
+            def popup(self):
+                child = tk.Toplevel()
+                cal = Calendar(child, self.data)
+                 
+            def print_selected_date(self):
+                print(self.data)
 
- 
-    root = tk.Tk()
-    app = Control(root)
+     
+        root = tk.Tk()
+        app = Control(root)
 
 
-    root.mainloop()
+        root.mainloop()
 
 place()
 
-from tkinter import *
+
+
 
 def show_entry_fields():
    print("date: %s\nplace: %s" % (e1.get(), e2.get()))
@@ -157,5 +179,4 @@ Button(master, text='Quit', command=master.quit).grid(row=3, column=0, sticky=W,
 Button(master, text='Show', command=show_entry_fields).grid(row=3, column=1, sticky=W, pady=4)
 
 mainloop( )    
-
 
